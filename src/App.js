@@ -30,6 +30,9 @@ function App() {
 })
 .then((response) => response.json())
 .then((data) => {
+
+  const user = [...users,data]
+  setUsers(user)
   console.log("Success:", data);
 })
 
